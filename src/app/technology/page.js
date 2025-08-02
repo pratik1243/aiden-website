@@ -1,5 +1,6 @@
 import React from 'react'
-import Technology from '@/pageComponents/Technology'
+import dynamic from 'next/dynamic';
+const Technology = dynamic(() => import("../../pageComponents/Technology"));
 
 const TechnologyPage = () => {
   return (

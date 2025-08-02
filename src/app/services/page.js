@@ -1,5 +1,6 @@
 import React from "react";
-import Services from "@/pageComponents/Services";
+import dynamic from 'next/dynamic';
+const Services = dynamic(() => import("../../pageComponents/Services"));
 
 const ServicePage = () => {
   return <Services />;

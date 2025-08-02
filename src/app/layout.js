@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
+import "../assets/styles/web-style.css";
 import { Roboto } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/styles/web-style.css";
-const Layout = dynamic(() => import("../pageComponents/Layout"), { ssr: false });
+const Layout = dynamic(() => import("../pageComponents/Layout"));
 
 const nunito = Roboto({
   weight: "400",
