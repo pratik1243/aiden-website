@@ -336,6 +336,7 @@ body {
 
 .features-sec {
   padding-top: 220px;
+  margin-bottom: 3rem;
 }
 
 .card3-content h3 {
@@ -543,7 +544,8 @@ body {
   }
 
   .features-sec {
-    padding-top: 80px;
+    padding-top: 40px;
+    margin-bottom: 0px !important;
   }
 
   .card2-content .image-sec {
@@ -611,6 +613,11 @@ body {
   .backdrop {
     display: block !important;
   }
+
+  .review-section .heading{
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -641,5 +648,9 @@ body {
   .banner-sec .banner-text-sec button {
     border-color: var(--black-color);
     color: var(--black-color);
+  }
+
+  .review-section .heading{
+    font-size: 25px;
   }
 }

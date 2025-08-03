@@ -60,7 +60,7 @@ const HomePage = () => {
               />
             </Col>
           </Row>
-          <Row className="features-sec mb-5">
+          <Row className="features-sec">
             <Col lg={4} md={4} sm={12} xs={12}>
               <CardContent3
                 image={timeTrackIcon}
