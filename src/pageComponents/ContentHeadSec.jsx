@@ -10,7 +10,7 @@ const ContentHeadSec = ({ heading, paragraph, align }) => {
             align ? "m-auto" : ""
           }`}
         >
-          <h2 className="mb-4">{heading}</h2>
+          <h2 className="mb-3">{heading}</h2>
           <p>{paragraph}</p>
         </div>
       </Col>
