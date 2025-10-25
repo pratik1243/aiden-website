@@ -1,94 +1,57 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import instagramIcon from "../assets/images/instagram-icon.svg";
-import facebookIcon from "../assets/images/facebook-icon.svg";
-import twitterIcon from "../assets/images/twitter-icon.svg";
-import linkedIcon from "../assets/images/linkedin-icon.svg";
-import darkBrandLogo from "../assets/images/aidel-dark-logo.png";
 import Image from "next/image";
+import fetchrrLogo from "../assets/images/fetchrr-logo.png";
 
 const Footer = () => {
   return (
-    <>
-      <div className="footer-sec">
-        <Container>
-          <Row>
-            <Col lg={7} md={7} sm={12} xs={12}>
-              <div>
-                <div className="footer-logo-sec mb-3">
-                  <Image
-                    src={darkBrandLogo}
-                    height={25}
-                    width={80}
-                    alt="footer-logo"
-                  />
-                </div>
-
-                <p className="mb-4">
-                  Fast, reliable delivery solutions for your business.
-                </p>
-
-                <div className="mb-2">
-                  <span> +91-98765-43210</span>
-                </div>
-
-                <div>
-                  <span>
-                    <a href="mailto:contact@aidelix.com">contact@aidelix.com</a>
-                  </span>
-                </div>
-              </div>
-            </Col>
-            <Col lg={5} md={5} sm={12} xs={12}>
-              <div className="contact-right-sec">
-                <h3 className="mb-4">Get In Touch</h3>
-
-                <div className="mt-2">
-                  <a href="" className="contact-icons">
-                    <Image
-                      src={instagramIcon}
-                      alt="footer-icon1"
-                      height={35}
-                      width={35}
-                    />
-                  </a>
-
-                  <a href="" className="contact-icons">
-                    <Image
-                      src={facebookIcon}
-                      alt="footer-icon2"
-                      height={35}
-                      width={35}
-                    />
-                  </a>
-
-                  <a href="" className="contact-icons">
-                    <Image
-                      src={twitterIcon}
-                      alt="footer-icon3"
-                      height={35}
-                      width={35}
-                    />
-                  </a>
-
-                  <a href="" className="contact-icons">
-                    <Image
-                      src={linkedIcon}
-                      alt="footer-icon3"
-                      height={35}
-                      width={35}
-                    />
-                  </a>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="copy-right-sec">
-        <p>Aidel © 2025. All rights reserved.</p>
-      </div>
-    </>
+    <div className="footer-sec">
+      <Container>
+        <Row>
+          <Col lg={4} md={4} sm={12} xs={12}>
+            <div className="footer-text-sec">
+              <Image
+                src={fetchrrLogo}
+                alt="footer-icon"
+                height={39}
+                width={122}
+              />
+              <p className="mt-3">
+                Enabling last-mile delivery for businesses across India
+              </p>
+            </div>
+          </Col>
+          <Col lg={3} md={3} sm={3} xs={6}>
+            <div className="link-sec">
+              <h5>Product</h5>
+              <a href="">Features</a>
+              <a href="">Pricing</a>
+              <a href="">API Docs</a>
+            </div>
+          </Col>
+          <Col lg={3} md={3} sm={3} xs={6}>
+            <div className="link-sec">
+              <h5>Company</h5>
+              <a href="">About</a>
+              <a href="">Careers</a>
+              <a href="">Contact</a>
+            </div>
+          </Col>
+          <Col lg={2} md={2} sm={3} xs={6}>
+            <div className="link-sec">
+              <h5>Support</h5>
+              <a href="">Help Center</a>
+              <a href="">Terms</a>
+              <a href="">Privacy</a>
+            </div>
+          </Col>
+        </Row>
+        <hr />
+        <div className="copyright-sec">
+          © 2024 fetchrr. All rights reserved.
+        </div>
+      </Container>
+    </div>
   );
 };
 

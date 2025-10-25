@@ -8,8 +8,8 @@ const nunito = Roboto({
 });
 
 export const metadata = {
-  title: "Aidel",
-  description: "Aidel Website",
+  title: "Fetchrr",
+  description: "Fetchrr Website",
 };
 
 export default function RootLayout({ children }) {
